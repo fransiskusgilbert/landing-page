@@ -1,0 +1,782 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  /* Adjust the height as needed */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navBgColor: #000000;
+  --fontBgColorWhite: #ffffff;
+  --fontBgColorGold: #ffb800;
+}
+
+.nav-body {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.nav-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--navBgColor);
+}
+
+.nav-wrapper {
+  font-size: 2rem;
+}
+
+.nav-wrapper ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-wrapper li {
+  margin: 0 10px;
+}
+
+.nav-wrapper a {
+  margin: 2rem 0;
+  padding: 1rem 3rem;
+  color: var(--fontBgColorWhite);
+}
+
+.nav-wrapper a:hover {
+  border-bottom: 1px solid var(--fontBgColorGold);
+  line-height: 20px;
+  transition: calc(20px);
+}
+.nav-logo img {
+  width: 140px;
+  margin: 2.5rem 2rem;
+}
+
+#mobile-menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+#mobile-menu-btn i {
+  color: var(--fontBgColorWhite);
+}
+.image-hamburger img {
+  width: 100px;
+  display: none;
+}
+
+.section-1 {
+  margin: 100px 0;
+  height: 100vh; /* You can adjust this height based on your design */
+  background-image: url(/assets/Car-plat-xto.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container-home {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.wrapper-home h1 {
+  margin: 3.2rem 0;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.wrapper-home p {
+  margin: -3rem 0;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.link-to-wa {
+  margin: 5rem 0;
+  background-color: var(--fontBgColorGold);
+  width: 230px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.link-to-wa a {
+  color: var(--fontBgColorWhite);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.section-2 {
+  margin: -100px 0;
+  height: 100vh; /* You can adjust this height based on your design */
+  background-image: url(/assets/xto-about-us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container-about {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-wrapper {
+  max-width: 100%;
+  background-color: rgba(113, 113, 113, 0.1);
+  height: 100vh;
+  margin: 0 10rem;
+}
+
+.header-about {
+  position: relative;
+  top: 5%;
+  margin: 0;
+}
+.header-about h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  margin: 2px;
+  padding: 1rem;
+}
+.about-wrapper img {
+  width: 250px;
+}
+
+.header-info {
+  margin: 6rem 0;
+}
+.header-info p {
+  color: var(--fontBgColorWhite);
+  text-align: justify;
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-2-5 {
+  margin: 100px 0;
+  height: 140vh; /* You can adjust this height based on your design */
+  background-color: #ffffff;
+}
+
+.container-about-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-about-product {
+  border-top: 4px solid black;
+  width: 1000px;
+  margin: 50px;
+}
+
+.text-about-product-container {
+  position: relative;
+  top: -80px;
+  width: 250px;
+  background-color: white;
+}
+
+.text-about-product-container p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about-product-img {
+  background-image: url(assets/crystal-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+  width: 100%;
+}
+
+.about-sub-img {
+  margin: auto;
+  background-color: rgba(250, 250, 250, 0.4);
+  width: 50%;
+  height: 100%;
+}
+
+.text-sub-product-1 {
+  position: relative;
+  top: 10%;
+}
+
+.text-sub-product-1 h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.text-sub-product-1 h3 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "poppins", sans-serif;
+  color: #434343;
+}
+
+.text-sub-product-1 p {
+  margin: 15px 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: #333;
+}
+
+.about-product-img-2 {
+  background-image: url(assets/ceramic-coating-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+  width: 100%;
+  margin: 70px 0;
+}
+.about-sub-img-2 {
+  margin: auto;
+  background-color: rgba(250, 250, 250, 0.6);
+  width: 50%;
+  height: 100%;
+}
+
+.text-sub-product-2 {
+  position: relative;
+  top: 10%;
+}
+
+.text-sub-product-2 h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.text-sub-product-2 h3 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "poppins", sans-serif;
+  color: #000000;
+}
+
+.text-sub-product-2 p {
+  margin: 15px 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+}
+.section-3 {
+  margin: 100px 0;
+  height: 100vh; /* You can adjust this height based on your design */
+  background-color: #ffffff;
+}
+
+.header-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.header-product h1 {
+  color: var(--fontBgColorGold);
+  font-size: 3rem;
+}
+
+.header-product p {
+  color: #000000;
+  font-size: 3.5rem;
+}
+
+.car-img img {
+  width: 400px;
+}
+
+.header-product-description p {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #bababa;
+}
+
+.container-header-product-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.wrapper-header-product-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-information-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-information-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-product-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.box-with-description {
+  width: 140px;
+  height: 100%;
+  line-height: 120%;
+}
+
+.box-with-description p:nth-child(2) {
+  text-align: left;
+  font-size: 12px;
+  font-family: "Loto", sans-serif;
+}
+.box-1 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid gray;
+}
+
+.box-product-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+}
+.box-2 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid gray;
+  margin: 0 5px;
+}
+
+.box-product-2 .box-with-description {
+  line-height: 1.8;
+}
+
+.product-information-img img {
+  width: 400px;
+}
+
+.section-4 {
+  margin: -150px 0;
+  height: 100vh; /* You can adjust this height based on your design */
+  background-color: #ffffff;
+}
+
+.header-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-header-detail h1 {
+  color: var(--fontBgColorGold);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text-header-detail p {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.detail-img {
+  margin: 40px 0;
+}
+.detail-img img {
+  width: 700px;
+}
+
+.section-5 {
+  margin: 100px 0;
+  height: 120vh; /* You can adjust this height based on your design */
+  background-color: #ffffff;
+}
+
+.find-us-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-find-us-detail {
+  color: var(--fontBgColorGold);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.open-hours {
+  margin: 20px 0;
+}
+
+.open-hours h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.status-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.status-store p {
+  margin: 0 10px;
+  font-size: 2rem;
+}
+
+.status-store i {
+  font-size: 2rem;
+}
+
+.store-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.store-day-1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.store-hours-1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.store-day-1 p,
+.store-hours-1 p {
+  font-size: 1.5rem;
+}
+.section-6 {
+  margin: 100px 0;
+  height: 100vh; /* You can adjust this height based on your design */
+  background-color: #ffffff;
+}
+
+.text-instagram-feed {
+  color: var(--navBgColor);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text-instagram-feed span {
+  color: var(--fontBgColorGold);
+}
+
+/* Footer */
+.footer {
+  bottom: 0;
+  background-color: #000000;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-text {
+  margin: 0 auto;
+}
+
+.footer-text p {
+  color: white;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .nav-body {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .nav-wrapper ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  .nav-wrapper ul.show {
+    display: flex;
+  }
+
+  .container-hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  .nav-logo img {
+    display: none;
+  }
+  .image-hamburger img {
+    width: 80px;
+    display: block;
+    margin: 0 20px;
+  }
+  .nav-wrapper ul a {
+    margin: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #mobile-menu-btn {
+    display: block;
+    margin: 0 20px;
+    float: right;
+  }
+
+  .section-1 {
+    margin: 0;
+    height: 70vh; /* You can adjust this height based on your design */
+    background-image: url(/assets/Car-plat-xto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250%;
+  }
+
+  .container-home {
+    width: 100%;
+  }
+
+  .wrapper-home {
+    margin: 10px 0;
+  }
+  .wrapper-home h1 {
+    margin: 4rem 0;
+    font-size: 2rem;
+  }
+
+  .section-2 {
+    margin: 0;
+    height: 100vh; /* You can adjust this height based on your design */
+    background-image: url(/assets/xto-about-us.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+  }
+
+  .container-about {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .about-wrapper {
+    max-width: 100%;
+    height: 80vh;
+    margin: 0 1rem;
+  }
+  .header-about {
+    position: relative;
+    top: 5%;
+    margin: 0;
+  }
+  .header-about h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .header-about img {
+    width: 150px;
+    margin: 0 1rem;
+  }
+
+  .header-info {
+    margin: 1rem 0;
+  }
+  .header-info p {
+    color: var(--fontBgColorWhite);
+    text-align: justify;
+    padding: 0.5rem 0;
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .about-product-img {
+    background-size: 300%;
+  }
+
+  .about-sub-img {
+    margin: 55px 0;
+    background-color: rgba(250, 250, 250, 0.4);
+    width: 100%;
+    height: auto;
+  }
+
+  .text-sub-product-1 h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .text-sub-product-1 h3 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    color: #000000;
+  }
+
+  .text-sub-product-1 p {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    color: #000000;
+  }
+
+  .about-product-img-2 {
+    background-size: 300%;
+  }
+
+  .about-sub-img-2 {
+    margin: 55px 0;
+    background-color: rgba(250, 250, 250, 0.7);
+    width: 100%;
+    height: auto;
+  }
+
+  .text-sub-product-2 h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .text-sub-product-2 h3 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    color: #000000;
+  }
+
+  .text-sub-product-2 p {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    color: #000000;
+  }
+
+  .section-3 {
+    margin: 140px 0;
+  }
+
+  .header-product {
+    margin: 10px 0;
+  }
+
+  .header-product h1 {
+    font-size: 2rem;
+  }
+
+  .header-product p {
+    font-size: 2rem;
+  }
+
+  .header-product-description p {
+    font-size: 15px;
+    color: #797979;
+  }
+  .wrapper-header-product-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product-information-img img {
+    width: 400px;
+  }
+
+  .section-4 {
+    margin: 450px 0;
+    height: 100vh; /* You can adjust this height based on your design */
+    background-color: #ffffff;
+  }
+
+  .text-header-detail h1 {
+    font-size: 2rem;
+  }
+  .text-header-detail p {
+    font-size: 2rem;
+  }
+
+  .detail-img img {
+    width: 350px;
+  }
+
+  .section-5 {
+    margin: -670px;
+  }
+
+  .text-find-us-detail h1 {
+    font-size: 2rem;
+  }
+
+  .map-find-us iframe {
+    width: 350px;
+    height: 250px;
+  }
+
+  .section-6 {
+    margin: 600px 0;
+    height: auto; /* You can adjust this height based on your design */
+    background-color: #ffffff;
+  }
+}
